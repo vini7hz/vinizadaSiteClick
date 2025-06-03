@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.config {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    width: 65%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+select {
+    width: 30%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #0072ff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005fd4;
+}
+
+#game p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#clickBtn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #444;
+}
+
+ol {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ol li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    .config {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

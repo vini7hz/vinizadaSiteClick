@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Click - Seu Der</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🖱️ Teste de Click</h1>
+
+        <div class="config">
+            <input type="text" id="username" placeholder="Digite seu nome">
+            <select id="timeSelect">
+                <option value="5">5 segundos</option>
+                <option value="10">10 segundos</option>
+                <option value="15">15 segundos</option>
+                <option value="30">30 segundos</option>
+            </select>
+            <button id="startBtn">Iniciar</button>
+        </div>
+
+        <div id="game">
+            <p id="timer">Tempo: 0s</p>
+            <p id="clicks">Cliques: 0</p>
+            <button id="clickBtn" disabled>Clique Aqui!</button>
+        </div>
+
+        <h2>🏆 Ranking (<span id="rankTime">5</span>s)</h2>
+        <ol id="ranking"></ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
